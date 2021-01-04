@@ -23,59 +23,63 @@ function findNameOfTallestMountain(mountains: Mountain[]): string{
         if (Mountain.height > tallestHeight){
             tallestHeight = Mountain.height;
             nameOfTallestMountain = Mountain.name;
-    }
-}
+    };
+};
      return nameOfTallestMountain;
-}
+};
 let tallestMountain: string = findNameOfTallestMountain(mountains);
 console.log(tallestMountain);
 
-//     function returnEmptyString(){
-//     const print any() void =>; 
-//      console.log("");
-// }
-//  interface Product { 
-//     name: string ; 
-//     price:number; 
-//  }
-//     let products:Product[] = [
-//     {
-//     name:"telescope",
-//     price: 5,
-//     },
-//     {
-//     name:"skiBoots",
-//     price: 20,
-//     },
-//     {
-//     name: 'scraper',
-//     price: 13,
-//     },
-// ];
+ interface Product { 
+    name: string ; 
+    price:number; 
+ }
+    let products:Product[] = [
+    {
+    name:"telescope",
+    price: 5.00,
+    },
+    {
+    name:"skiBoots",
+    price: 20.00,
+    },
+    {
+    name: 'scraper',
+    price: 13.00,
+    },
+];
 
-// function calcAverageProductPrice(products:Product){
-// }
+function calcAverageProductPrice(products: Product[]): string {
+     let averageProductPrice: number = [5.00 + 1.00 +2.00 / 3]; 
+   } 
+return averageProductPrice;
 
-// interface  InventoryItem{ 
-//     product: Product; 
-//     quantity:number; 
-// }
+let averagePrice: number = calcAverageProductPrice(products);
+    console.log(averagePrice);
 
-// let inventory:InventoryItem[]= [
-// {
-// //    const product.name = (inventory: InventoryItem.Product): string,
-//     product.name: 'motor',
-//     product.price: 10.00,    
-//     quantity: 10
-// },
-// {
-//     product.name: 'sensor',
-//     product.price: 12.50;
-//     quantity: 4
-// },
-// {
-//     product.name:LED;
-//     product.price: 1.00;
-//     quantity: 20
-// },
-// ]
+
+interface  InventoryItem{ 
+    product: Product[]; 
+    quantity:number; 
+}
+
+let inventory:InventoryItem[]= [
+{
+    // const product.name = (inventory: InventoryItem.Product): string,
+    product.name: 'motor',
+    product.price: 10.00,    
+    quantity: 10
+},
+{
+    product.name: 'sensor',
+    product.price: 12.50;
+    quantity: 4
+},
+{
+    product.name:LED;
+    product.price: 1.00;
+    quantity: 20
+},
+]
+let newValue: number = calcInventoryValue(inventory): number;
+console.log(newValue);
